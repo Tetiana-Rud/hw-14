@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_14 From Style</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<h1>Form Style by NaviCom</h1>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<section class="section">
+				<div class="side">
+					<h2 class="title_2">Create an Account</h2>
+					<form class="form">
+						<div class="row">
+							<div class="col col_half">
+								<label for="first-name" class="label">First
+									Name</label>
+								<input type="text" id="first-name">
+							</div>
+							<div class="col col_half">
+								<label for="last-name" class="label">Last
+									Name</label>
+								<input type="text" id="last-name">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col_full">
+								<label for="mail" class="label">E-mail</label>
+								<input type="email" id="mail">
+								<p class="text">We'll never share your email
+									with anyone else.</p>
+							</div>
+						</div>
+
+						<div class="form__gender gender">
+							<div class="gender__item">
+								<label>
+									<input type="radio" name="gender">
+									<span class="gender__check"></span>
+									Men
+								</label>
+								<label>
+									<input type="radio" name="gender">
+									<span class="gender__check"></span>
+									Women
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col_half custom-select">
+								<label for="country" class="label">Country</label>
+								<select name="country" id="country" required>
+									<option value="" disabled selected hidden>Select</option>
+									<option value="Ukraine">Ukraine</option>
+									<option value="USA">USA</option>
+								</select>
+							</div>
+							<div class="col col_half">
+								<label for="city" class="label">City</label>
+								<input type="text" id="city">
+							</div>
+						</div>
+						<div class="row">
+							<button class="btn btn_full">Sign Up</button>
+						</div>
+					</form>
+
+					<div class="accept">
+						By clicking the 'Sign Up' button, you confirm that you accept our<br>
+						<a href="#" class="accept__link">Terms of Use</a> and
+						<a href="#" class="accept__link">Privacy Policy</a>.
+					</div>
+					<div class="login">
+						<p>Have an account?</p>
+						<a href="#" class="login__link">
+							Log In
+						</a>
+					</div>
+				</div>
+				<div class="side profile">
+					<h2 class="title_2">Profile</h2>
+					<form class="profile__form">
+						<div class="profile__heading">
+							<div class="profile-photo">
+								<img src="./assets/img/image.png" alt="photo">
+							</div>
+							<div class="profile-download">
+								<label class="profile__label" for="file">
+									<img src="./assets/img/file.svg" alt="photo">
+								</label>
+								<input class="profile__input" type="file" name="files" id="file" multiple>
+								<button class="profile__btn" type="reset">
+									<img src="./assets/img/trash.svg" alt="basket button">
+								</button>
+								<p class="profile__text">Up to 1 MB (300x300 px)</p>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col_half">
+								<label for="name" class="label">Name</label>
+								<input type="text" id="name">
+							</div>
+							<div class="col col_half">
+								<label for="email" class="label">
+									E-mail</label>
+								<input type="text" id="email">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col_half custom-select">
+								<label for="country-1" class="label">Country</label>
+								<select name="country" id="country-1" required>
+									<option value="" disabled selected hidden>Select</option>
+									<option value="Ukraine">Ukraine</option>
+									<option value="USA">USA</option>
+								</select>
+							</div>
+							<div class="col col_half">
+								<label for="city-1" class="label">City</label>
+								<input type="text" id="city-1">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col_half">
+								<label for="zip" class="label">Zip Code</label>
+								<input type="text" id="zip">
+							</div>
+							<div class="col col_half">
+								<label for="phone" class="label">
+									Phone Number</label>
+								<input type="tel" id="phone">
+							</div>
+						</div>
+						<div class="row">
+							<button class="btn btn_min">Sign Up</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+
+	</main>
+</body>
+
+</html>
